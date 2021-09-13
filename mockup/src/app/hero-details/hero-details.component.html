@@ -1,0 +1,77 @@
+
+
+  <div class="container-fluid text-dark pt-5" *ngIf="loaded">
+      <div class="row align-items-center justify-content-center">
+          <div class="col-8 align-items-center ">
+            <div class="card" >
+                <img style="height: 500px;" src="{{hero.img}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title"> {{heroReceived}}</h3>
+<div class="container">
+  <div class="row">
+<div class="col-sm-12 col-md-6">
+  <h5 class=""> Powerstats</h5>
+
+  <ul class="list-group align-items-center ">
+<li class="list-group-item border-0 fw-light fs-5 justify">Combat:  {{hero.powerstats.combat}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Durability:  {{hero.powerstats.durability}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Intelligence:  {{hero.powerstats.intelligence}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Power:  {{hero.powerstats.power}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Speed:  {{hero.powerstats.speed}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Strength:  {{hero.powerstats.strength}}</li>
+</ul>
+</div>
+<div class=" col-sm-12 col-md-6 pt-sm-5 pt-md-0">
+
+<h5 class=""> Appearance</h5>
+
+<ul class="list-group align-items-center ">
+<li class="list-group-item border-0 fw-light fs-5 justify">Eye Color:  {{hero.appearance.eyeColor}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Gender:  {{hero.appearance.gender}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Hair Color:  {{hero.appearance.hairColor}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Height:  {{hero.appearance.height}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Race:  {{hero.appearance.race}}</li>
+<li class="list-group-item border-0 fw-light fs-5 justify">Weight:  {{hero.appearance.weight}}</li>
+</ul>
+</div>
+  </div>
+  
+<div class="row pt-5">
+  <div class="col-10">
+    <h5 class=""> Biography</h5>
+
+    <ul class="list-group align-items-center ">
+    <li class="list-group-item border-0 fw-light fs-5 justify">Aliases:  {{hero.biography.aliases}}</li>
+    <li class="list-group-item border-0 fw-light fs-5 justify">Alignment:  {{hero.biography.alignment}}</li>
+    <li class="list-group-item border-0 fw-light fs-5 justify">AlterEgos:  {{hero.biography.alterEgos}}</li>
+    <li class="list-group-item border-0 fw-light fs-5 justify">FirstAppearance:  {{hero.biography.firstAppearance}}</li>
+    <li class="list-group-item border-0 fw-light fs-5 justify">Full Name:  {{hero.biography.fullName}}</li>
+    <li class="list-group-item border-0 fw-light fs-5 justify">Place Of Birth:  {{hero.biography.placeOfBirth}}</li>
+    <li class="list-group-item border-0 fw-light fs-5 justify">Publisher:  {{hero.biography.publisher}}</li>
+    
+    </ul>
+  </div>
+</div>
+
+<div class="row pt-5">
+  <div class="col-10">
+    <h5 class=""> Connections</h5>
+
+    <ul class="list-group align-items-center ">
+    <li class="list-group-item border-0 fw-light fs-5 justify">Group Affiliation:  {{hero.connections.groupAffiliation}}</li>
+    <li class="list-group-item border-0 fw-light fs-5 justify">Relatives:  {{hero.connections.relatives}}</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+
+
+
+                </div>
+              </div>
+          </div>
+      </div>
+
+  </div>

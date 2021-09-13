@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid text-light  " style="height: 2300px;" >
+  <div class="row justify-content-center  ">
+      <div class="col-sm-11 col-lg-8  text-center  pt-5  ">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle px-5"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+>
+            Elije un Heroe
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+            <li *ngFor="let hero of heroes"  (click)="onSelect(hero.name)" >
+              <a class="dropdown-item">
+                <img class="img-thumbnail"  [src]="hero.imgUrl" >
+      
+                {{hero.id}} {{hero.name}}</a>
+            </li>
+      
+          </ul>
+        </div>  
+        <app-hero-details class="pt-5" [heroReceived]="heroSelected" *ngIf="clickHero"></app-hero-details>
+
+      </div>
+  </div>
+</div>
+
+<app-footer></app-footer> 
+
